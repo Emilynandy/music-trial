@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My music website</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/* .qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+
+        *{
+            margin:0;
+            border:0;
+        }
+
+        h1,h2,h3{
+            font-family: "Qwitcher Grypen", cursive;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        h1{
+            font-size:50px;
+        }
+
+        h3{
+            font-size:25px;
+        }
+
+        h2{
+            font-size:35px;
+        }
+
+        .heads{
+            /* border:10px solid rgb(255, 210, 218) ; */
+        }
+
+        .navigation{
+            border:5px solid rgb(168, 255, 168);
+            padding:20px 0px;
+            /* position:fixed; */
+            z-index:1;
+        }
+
+        .ul{
+            background-color:white;
+            min-width:400px;
+            margin:5px auto;
+            width:30%;
+            border:2px solid lightsalmon;
+            /* overflow:hidden; */
+        }
+
+        .ul li{
+            display:inline-block;
+            margin: 0px 30px;
+            /* border:2px solid yellow; */
+            /* float:right; */
+            list-style:none;
+        }
+
+        .ul a{
+            
+            text-decoration:none;
+            text-transform:uppercase;
+            color:lightcoral;
+        }
+
+        .main-image{
+            height:60vh;
+            position:relative;
+            /* margin-top:20px; */
+        }
+
+        .big-image{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+        }
+
+        .bt-content{
+            /* height:25%; */
+            color:coral;
+            background-color: rgba(0,0,0,0.8);
+            border-radius:5px;
+            padding:30px 30px;
+            width:20%;
+            position:absolute;
+            bottom:90px;
+            right:200px;
+        }
+
+        /* main */
+
+        .bg{
+           background-color:rgb(209, 174, 224);
+            /* border:20px solid lightgreen; */
+            /* height:400px; */
+        }
+
+
+        .sw{
+            /* background-color:lightgreen; */
+            /* border:5px solid lightcoral; */
+            /* height:100px; */
+            width:85%;
+            margin:0 auto;
+            padding:20px 0;
+        }
+
+        .para1{
+            background-color:rgb(177, 225, 255);
+            overflow:hidden;
+            padding:30px;
+            border-bottom:3px groove black;
+        }
+
+        .para1-content{
+            padding:10px 0;
+            height:250px;
+            /* border:2px solid lightpink; */
+            float:right;
+            width:45%;
+        }
+
+        .para1-content p{
+            margin:30px 0;
+        }
+
+        .para1-image{
+            border-radius:10px;
+            padding:10px 0;
+            text-align:center;
+            /* border:5px solid lightyellow; */
+            float:left;
+            width:50%;
+            height:250px;
+        }
+
+
+        .button{
+            margin-top:20px;
+        }
+
+        .trombone{
+            border-radius:10px;
+            /* object-fit:contain; */
+            object-position:center;
+            /* width:100%; */
+            height:100%;
+        }
+
+        .piano{
+            border-radius:10px;
+            /* object-fit:contain; */
+            object-position:center;
+            /* width:100%; */
+            height:100%;
+        }
+
+        /* footer */
+
+        .footer{
+            background-color:rgb(255, 222, 228);
+            padding:50px;
+            text-align:center;
+        }
+
+        .btn{
+            margin-top:5px;
+            display:inline-block;
+            background-color:lavender;
+            padding:10px 5px;
+            text-decoration:none;
+            color:black;
+            border-radius:20px;
+        }
+
+        .btn:hover{
+            border:2px solid grey;
+        }
+
+
+        @media screen and (max-width: 800px){
+
+            .para1{
+            background-color:rgb(177, 225, 255);
+            /* overflow:hidden; */
+            padding:30px;
+            border-bottom:3px groove black;
+            text-align:center;
+        }
+
+        .para1-content{
+            padding:10px 0;
+            height:250px;
+            /* border:2px solid lightpink; */
+            float:none;
+            width:100%;
+        }
+
+        .para1-content p{
+            margin:30px 0;
+        }
+
+        .para1-image{
+            /* display:block; */
+            border-radius:10px;
+            padding:10px 0;
+            text-align:center;
+            /* border:5px solid lightyellow; */
+            float:none;
+            width: 100%;
+            height:250px;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- header -->
+    <header class="heads">
+        <nav class="navigation">
+            <ul class="ul">
+                <li>
+                   <a href="">home</a> 
+                </li>
+                <li>
+                   <a href="">music</a>
+                </li>
+                <li>
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-image">
+            <img src="image/music photo(trombone and piano).png" alt="music" class="big-image">
+            <div class="bt-content">
+                <h1>Music</h1>
+                <h3>Make a Peice of Music</h3>
+
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <!-- main -->
+    <main class="bg">
+        <div class="sw">
+            <section class="para1">
+                <div class="para1-image">
+                    <img src="image/trombone2.jpeg" class="trombone">
+                </div>
+                <div class="para1-content">
+                    <h2>Trombone</h2>
+                    <p>The trombone is a 15th-century development of the trumpet and, until approximately 1700, was known as the sackbut. Like a trumpet, it has a cylindrical bore flared to a bell. Its mouthpiece is larger, however, suited to its deeper musical register, and is parabolic in cross section, like a cornet</p>
+                    <a href="https://www.sfsymphony.org/EducationCommunity/Instrument-of-the-Months/Instrument-of-the-Month-Trombone  " target="_blank" class="btn">Find out more</a>
+                </div>
+            </section>
+
+            <section class="para1">
+                <div class="para1-image">
+                    <img src="image/piano2.jpg" class="piano">
+                </div>
+                <div class="para1-content">
+                    <h2>piano</h2>
+                    <p>The piano was invented by Bartolomeo Cristofori of Padua, Italy. He made his first piano in 1709. It developed from the clavichord which looks like a piano but the strings of a clavichord are hit by a small blade of metal called a “tangent”. In the piano the strings are hit by a block of wood called a hammer.</p>
+                    <a href="https://www.britannica.com/art/piano" target="_blank" class="btn">Find out more</a>
+                </div>
+            </section>
+        </div>
+
+            
+    </main>
+<!-- footer -->
+    <footer class="footer">
+        <p class="mm">&copy: 2024 My Music</p>
+    </footer>
+</body>
+</html>
+
+
